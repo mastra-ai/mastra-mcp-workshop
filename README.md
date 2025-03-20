@@ -53,6 +53,8 @@ It would also be helpful for a coding agent to have these features, but they are
 - LSP + code indexing and search
 - Human in the loop to approve/deny shell commands and file edits
 
+Take a look at `src/tui.ts` for how we're running our agent, look at `src/agents/coder.ts` for the code used to give the agent Mastra, shell, filesystem, and web search capabilities.
+
 ## Building your own MCP server
 
 We'll most likely have another MCP workshop in the future talking about this more in depth. For now the `@mastra/mcp-docs-server` code is OSS and free to browse and use as a starting point for your own server.
