@@ -1,10 +1,13 @@
 import path from "path";
 import fs from "fs";
 
+let depth = 0;
 export const getDirectoryFileList = (
   dir: string,
   baseDir: string = dir,
 ): string => {
+  depth++;
+  if (depth > 3) return ``;
   const files = fs.readdirSync(dir, { withFileTypes: true });
   const result: string[] = [];
 
